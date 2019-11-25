@@ -17,7 +17,7 @@ for j in range(0, file_count):
     for i in range(0, len(data)):
         xtest[j][i] = data[i]
 
-ytest = ['abhinav 20may', 'aman 4august', 'ankita 10october', 'kajol 13september', 'manish 1december', 'manshi 27october','mansi 3november','megha 8october', 'sanidhya 26may', 'tanya 25june']
+ytest = ['abhinav 20may', 'aman 4august', 'ankita 10october', 'kajol 13september', 'kartik 7february', 'manish 1december', 'manshi 27october','mansi 3november','megha 8october', 'nancy 6august', 'neha 15october', 'priyansh 13november', 'sakshi 24september', 'sanidhya 26may', 'tanya 25june']
 # output array
 from sklearn.neighbors import KNeighborsClassifier
 classifier=KNeighborsClassifier(n_neighbors=1)
