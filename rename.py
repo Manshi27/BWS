@@ -1,7 +1,5 @@
-import csv
 import os
 import cv2
-import numpy as np
 count = 1
 for path, subdirnames, filenames in os.walk("trainingImages"):
     for filename in filenames:
@@ -14,11 +12,7 @@ for path, subdirnames, filenames in os.walk("trainingImages"):
         if img is None:
             print("Image not loaded properly")
             continue
-        # image = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-        # resized_image = cv2.resize(image, (28, 28))
-        # print(resized_image.shape)
-        # result = np.array(resized_image).flatten()
-        # print(result)
+
         new_path = "renamed"
         print("Desired path is",os.path.join(new_path, "%d.jpg" % count))
         cv2.imwrite(os.path.join(new_path, "%d.jpg" % count), img)
